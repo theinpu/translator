@@ -1,0 +1,9 @@
+<?php
+
+return array(
+    'lang'     => array(
+        'ru' => __DIR__.'/../lang/ru/',
+        'en' => __DIR__.'/../lang/en/'
+    ),
+    'generate' => true
+);

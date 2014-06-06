@@ -11,7 +11,8 @@
         }
     ],
     "require": {
-        "php": ">=5.3"
+        "php": ">=5.3",
+        "bc/config": ">=0.1.5"
     },
     "require-dev":{
         "phpunit/phpunit": "3.7.*"

@@ -2,7 +2,7 @@
     "name": "bc/translator",
     "description": "a very own multi language bicycle",
     "type": "library",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "license": "MIT",
     "authors": [
         {

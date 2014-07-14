@@ -14,7 +14,7 @@ class LangTest extends \PHPUnit_Framework_TestCase {
 
     public function testGetLocales() {
         $locales = Lang::getLocales();
-        $this->assertEquals(array('ru', 'en'), $locales);
+        $this->assertEquals(array('ru' => 'русский', 'en' => 'English'), $locales);
     }
 
     public function testSetRULocale() {

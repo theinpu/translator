@@ -21,15 +21,24 @@ class Lang {
     private static $lang;
     private static $localeFile;
 
+    private static $allLocales;
+
     public static function getLocales() {
         self::checkConfig();
-        $locales = self::$cfg->get('lang');
-        return array_keys($locales);
+
+        $locales = array();
+        $keys = array_keys(self::$cfg->get('lang'));
+        foreach($keys as &$key) {
+            $locales[$key] = self::$allLocales[$key];
+        }
+
+        return $locales;
     }
 
     private static function checkConfig() {
         if(is_null(self::$cfg)) {
             self::$cfg = ConfigManager::get('config/lang');
+            self::$allLocales = require_once('langs.php');
         }
     }
 
